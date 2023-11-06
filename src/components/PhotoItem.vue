@@ -21,7 +21,6 @@
     },
     methods: {
       openLightbox() {
-        // Здесь вы можете вызвать функцию для открытия фотографии в CoolLightBox
       },
     },
   };
@@ -30,7 +29,7 @@
   <style scoped>
   .photo-item {
     position: relative;
-    cursor: pointer; /* Добавьте курсор-указатель, чтобы показать, что элемент кликабелен */
+    cursor: pointer;
   }
   
   img {

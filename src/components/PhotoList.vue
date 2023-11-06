@@ -34,7 +34,7 @@ export default {
         return {
             photos: [],
             users: [],
-            lightboxItems: [], // Массив элементов для vue-easy-lightbox
+            lightboxItems: [],
             lightboxIndex: null,
             visibleRef: false,
             indexRef: 0,
@@ -52,8 +52,8 @@ export default {
                 this.photos = response.data.photos;
                 this.fetchUserDetails(this.photos);
                 this.lightboxItems = this.photos.map((photo) => ({
-                    src: photo.url, // URL изображения
-                    title: photo.title, // Название изображения
+                    src: photo.url,
+                    title: photo.title, 
                 }));
             })
             .catch((error) => {
